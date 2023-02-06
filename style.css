@@ -1,0 +1,221 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,  button {
+    font-family: 'Open Sans', sans-serif;
+    background-color: antiquewhite;
+}
+input{
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgba(242,240,240,0.757);
+}
+input, button {
+    font-size: 16px;
+}
+
+.bar {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(49,156,104);
+    color: white;
+    position: relative;
+}
+
+main {
+    max-width: 800px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 16px;
+
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+#card{
+    box-shadow: 0 4px 8px 0 black;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.input_section {
+    padding: 50px;
+    margin-top: 50px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgba(242,240,240,0.757);
+}
+
+.input_section > h2 {
+    text-align: center;
+    color: rgb(24, 75, 169);
+}
+
+.input_section > form > .input {
+    margin: 8px 0;
+}
+
+.input_section > form > button {
+    background-color: rgb(38, 78, 152);
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+}
+.input_section > form > button:hover {
+    background-color: rgb(244, 147, 21);
+}
+
+.input_section > form > button > span {
+    font-weight: bold;
+}
+
+.input_section > form > .input > input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.input_section > form > .input > label {
+    color: rgb(38, 78, 152);
+    font-weight: bold;
+}
+
+.input_section > form > .input_inline {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+}
+
+.input_section > form > .input_inline > label {
+    color: rgb(38, 78, 152);
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.search_section {
+    margin: 16px 0;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgba(242,240,240,0.757);
+}
+
+.search_section > h2 {
+    color: rgb(24, 75, 169);
+}
+
+.search_section > form {
+    padding: 16px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr 0.5fr;
+    grid-gap: 10px;
+}
+
+.search_section > form > label {
+    display: flex;
+    align-items: center;
+}
+
+.search_section > form > input {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.search_section > form > button {
+    background-color: rgb(38, 78, 152);
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.search_section > form > button:hover {
+    background-color: rgb(244, 147, 21);
+}
+
+.book_shelf {
+    margin: 16px 0 0 0;
+    border: 1px solid black;
+    padding: 16px;
+    border-radius: 10px;
+    background-color:rgba(242,240,240,0.757) ;
+}
+
+.book_shelf > h2 {
+    color: rgb(24, 75, 169);
+}
+
+.book_shelf > .book_list {
+    padding: 16px;
+}
+
+.book_shelf > .book_list > .book_item {
+    padding: 8px 16px 16px 16px;
+    box-shadow: 0 4px 8px 0 black;
+    background-color: bisque;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.book_shelf > .book_list > .book_item > h3, p {
+    margin: 8px 0;
+}
+
+.book_shelf > .book_list > .book_item > .action > button {
+    border: 0;
+    padding: 5px;
+    margin: 0 5px 0 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.book_shelf > .book_list > .book_item > .action > button:hover {
+    background-color: rgb(242, 144, 15);
+}
+
+.book_shelf > .book_list > .book_item > .action > .green {
+    background-color: darkgreen;
+    color: white;
+}
+
+.book_shelf > .book_list > .book_item > .action > .red {
+    background-color: darkred;
+    color: white;
+}
+
+@media screen and (max-width: 980px) {
+    .wrapper{
+        flex-direction: column;
+    }
+
+    .input, label{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 538px) {
+    #searchBook{
+        display: block;
+    }
+    #searchBookTitle, #searchSubmit{
+        margin-bottom: 10px;
+        width: 100%;
+    }
+}
