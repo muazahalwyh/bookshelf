@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function(){
     submitForm.addEventListener('submit', function(event){
         event.preventDefault();
         addBook();
+        submitForm.reset();
     });
 
     const searchBooks = document.getElementById('searchBook');
